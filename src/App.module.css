@@ -1,0 +1,61 @@
+:root {
+  --violet: rgba(179, 139, 250, 1);
+  --pink: rgba(255, 121, 242, 1);
+  --teal: rgba(67, 230, 252, 1);
+  --orange: rgba(241, 149, 118, 1);
+  --dark-blue: rgba(0, 71, 255, 1);
+  --fade-blue: rgba(102, 145, 255, 1);
+  --light-pink: rgba(247, 236, 220, 1);
+  --blue-100: rgba(232, 232, 232, 1);
+  --gray-400: rgba(154, 154, 154, 1);
+  --gray-300: rgba(204, 204, 204, 1);
+  --slate-dark: rgba(41, 41, 41, 1);
+  --gray: rgba(151, 151, 151, 1);
+  --shadow: rgba(47, 47, 47, 0.75);
+  --slate-darker: rgba(53, 53, 53, 1);
+  font-family: 'Roboto',sans-serif;
+ 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.main-app {
+  display: flex;
+}
+
+.mobile-view {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.desktop-view {
+  display: none;
+}
+
+@media screen and (min-width:1000px) {
+
+  .mobile-view {
+    display: none;
+  }
+  .desktop-view {
+    width: 100%;
+    display: flex;
+    min-height: 100dvh;
+  }
+
+  .create-notes {
+    width: 35%;
+  }
+
+  .my-notes {
+    width: 65%;
+  }
+}

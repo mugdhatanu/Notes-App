@@ -1,0 +1,57 @@
+.all-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.open-note {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 1.5rem;
+}
+
+.open-note:hover {
+    background-color: var(--light-pink);
+}
+
+.icon {
+    color: white;
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: clamp(1.2rem,7vw,2rem);
+    font-weight: 500;
+}
+
+.note {
+    font-size: clamp(1.2rem,7vw,2rem);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .all-notes {
+        padding-left: 1rem;
+    }
+
+    .open-note {
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    .add-background {
+        background-color: var(--light-pink);
+    }
+    .icon {
+        font-size: clamp(1.2rem,5vw,1.8rem);
+    }
+    .note {
+        font-size: clamp(1.2rem,5vw,1.8rem);
+    }  
+
+}

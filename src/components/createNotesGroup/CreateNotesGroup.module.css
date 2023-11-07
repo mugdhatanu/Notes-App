@@ -1,0 +1,30 @@
+.create-notes {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: clamp(1.5rem,10vw,3rem);
+    margin: 1.5rem;
+}
+
+.create-group {
+    background-color: black;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border-radius: 37px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: clamp(1rem,5vw,1.5rem);
+    cursor: pointer;
+    margin: 1.5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .create-group {
+        font-size: clamp(1rem,5vw,1.3rem);
+    }
+}
+
